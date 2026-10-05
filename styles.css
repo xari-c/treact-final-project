@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: "Roboto", sans-serif; */
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 56px 0;
+  padding: 80px 0;
+  /* border: 2px solid blue; */
 }
 
 .purple {
@@ -19,6 +20,15 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  /* border: 1px solid violet; */
+}
+
+section {
+  padding: 0 32px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -30,15 +40,20 @@ h1 {
 }
 
 h2 {
-  font-size: 16px;
+  font-size:10px;
 }
 
 h3 {
+  font-size: 12px;
+  color:#622be2;
+}
+
+h4 {
   font-size: 8px;
 }
 
 p {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 nav {
@@ -80,6 +95,12 @@ button {
 .logo__img {
   max-width: 20px;
 }
+
+/* 
+
+LANDING
+
+*/
 
 .hero {
   display: flex;
@@ -123,3 +144,31 @@ input[type="email"] {
 .btn__email {
   font-size: 8px;
 }
+
+/* 
+
+FEATURES
+
+*/
+
+#features {
+  position: relative;
+  justify-content: center;
+}
+
+.section__title {
+  color:#622be2;
+  font-size: 16;
+  padding: 8px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  display: flex;
+  width: calc(100%/3);
+}
+
