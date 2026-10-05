@@ -172,3 +172,28 @@ FEATURES
   width: calc(100%/3);
 }
 
+/* 
+
+QUALITY WORK
+
+*/
+
+.quality--work {
+  display: flex;
+}
+
+.quality__img--wrapper {
+  width: 50%;
+}
+
+.quality__desc {
+  max-width: 50%;
+  padding: 24px;
+}
+
+.quality__img {
+  max-width: 100%;
+}
+
+
+
