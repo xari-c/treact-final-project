@@ -307,6 +307,33 @@ STEPS ↓
     align-items: center;
 }
 
+.steps {
+  display: flex;
+}
+
+.step {
+  display: flex;
+}
+
+.steps__img--wrapper {
+  width: 50%;
+}
+
+.steps__img {
+  max-width: 100%;
+}
+
+.steps__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__desc {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  padding: 24px;
+}
 
 /* 
 
