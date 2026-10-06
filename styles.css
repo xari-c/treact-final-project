@@ -13,7 +13,7 @@
 }
 
 .purple {
-  color: #622be2;
+  color: #6415ff;
 }
 
 .row {
@@ -45,7 +45,7 @@ h2 {
 
 h3 {
   font-size: 12px;
-  color:#622be2;
+  color:#6415ff;
 }
 
 h4 {
@@ -157,7 +157,7 @@ FEATURES
 }
 
 .section__title {
-  color:#622be2;
+  color:#6415ff;
   font-size: 16;
   padding: 8px;
 }
@@ -229,6 +229,28 @@ STEPS
   display: flex;
 }
 
+/* 
+
+VALUES
+
+*/
+
+.values {
+  display: flex;
+}
+
+.values__img--wrapper {
+  width: 50%;
+}
+
+.values__desc {
+  max-width: 50%;
+  padding: 24px;
+}
+
+.values__img {
+  max-width: 100%;
+}
 
 
 
