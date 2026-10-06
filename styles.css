@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Roboto", sans-serif; */
 }
 
 .container {
@@ -252,5 +251,26 @@ VALUES
   max-width: 100%;
 }
 
+/* 
+
+PRICING
+
+*/
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plan {
+  display: flex;
+  width: calc(100%/3);
+  flex-direction: column;
+}
+
+.pricing__box--mid {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
 
 
