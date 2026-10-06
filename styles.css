@@ -27,7 +27,7 @@ section {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: inter;
 }
 
 img {
@@ -234,23 +234,23 @@ VALUES
 
 */
 
-.testimonials {
+.values {
   display: flex;
     /* border: 1px solid violet; */
 }
 
-.testimonials__img--wrapper {
+.values__img--wrapper {
   max-width: 100%;
   /* border: 1px solid violet; */
 }
 
-.testimonials__desc {
+.values__desc {
   max-width: 50%;
   padding: 24px;
     /* border: 1px solid violet; */
 }
 
-.testimonials__img {
+.values__img {
   max-width: 100%;
 }
 
@@ -282,21 +282,55 @@ TESTIMONIALS
 
 */
 
-.values {
+.testimonials {
   display: flex;
 }
 
-.values__img--wrapper {
+.testimonials__img--wrapper {
   width: 50%;
 }
 
-.values__desc {
+.testimonials__desc {
   max-width: 50%;
   padding: 24px;
 }
 
-.values__img {
+.testimonials__img {
   max-width: 100%;
+}
+
+/* 
+
+CTA
+
+*/
+
+/* .cta__container {
+  background-image: ;
+} */
+
+.cta__container {
+  font-family: inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 24px 80px;
+   /* border: 1px solid violet; */
+}
+
+.cta__desc {
+  padding: 16px;
+}
+
+.btn__cta--start {
+  font-size: 10px;
+  background-color: rgb(252, 104, 87);
+}
+
+.btn__cta--contact {
+  font-size: 10px;
+  border: 1px solid white;
 }
 
 
