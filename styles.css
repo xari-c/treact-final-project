@@ -86,7 +86,7 @@ button {
   gap: 24px;
 }
 
-.nav__logo {
+.logo {
   display:flex;
   gap: 8px;
   align-items: center;
@@ -331,6 +331,52 @@ CTA
 .btn__cta--contact {
   font-size: 10px;
   border: 1px solid white;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+.footer__row {
+  background-color: #6415ff;
+  color: white;
+  padding: 24px;
+  /* border: 1px solid violet; */
+}
+
+.links {
+  display: flex;
+  max-width: 100%;
+  padding: 16px;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 24px;
+}
+
+.tm__row {
+  border-top: 1px solid #715353;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  align-items: center;
+  /* border: 1px solid violet; */
+}
+
+.social__imgs--wrapper {
+  font-size: 20px;
+  color: black;
+  display: flex;
+  gap: 8px;
+    /* border: 1px solid violet; */
+}
+
+.icon__coin {
+  background-color: white;
+  border-radius: 50%;
+  max-width: calc(100%/3);
+  /* padding: 2px; */
 }
 
 
