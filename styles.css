@@ -380,6 +380,22 @@ PRICING ↓
     align-items: center;
 }
 
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plan {
+  display: flex;
+  width: calc(100%/3);
+  flex-direction: column;
+}
+
+.pricing__box--mid {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
 /* 
 
 TESTIMONIALS ↓
