@@ -309,7 +309,7 @@ CTA
   background-image: ;
 } */
 
-.cta__container {
+.cta {
   font-family: inter;
   display: flex;
   align-items: center;

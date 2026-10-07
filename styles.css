@@ -431,13 +431,34 @@ START / CALL TO ACTION ↓
 
 */
 
-
-
-#start .row {
+#cta .row {
     position: relative;
     overflow: hidden;
 }
 
+.cta {
+  font-family: inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 24px 80px;
+   /* border: 1px solid violet; */
+}
+
+.cta__desc {
+  padding: 16px;
+}
+
+.btn__cta--start {
+  font-size: 10px;
+  background-color: rgb(252, 104, 87);
+}
+
+.btn__cta--contact {
+  font-size: 10px;
+  border: 1px solid white;
+}
 
 /* 
 
