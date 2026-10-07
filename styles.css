@@ -407,6 +407,23 @@ TESTIMONIALS ↓
     display: flex;
 }
 
+.testimonials {
+  display: flex;
+}
+
+.testimonials__img--wrapper {
+  width: 50%;
+}
+
+.testimonials__desc {
+  max-width: 50%;
+  padding: 24px;
+}
+
+.testimonials__img {
+  max-width: 100%;
+}
+
 
 /* 
 
