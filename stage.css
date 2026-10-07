@@ -346,7 +346,7 @@ FOOTER
   /* border: 1px solid violet; */
 }
 
-.links {
+.footer__links {
   display: flex;
   max-width: 100%;
   padding: 16px;
