@@ -53,9 +53,7 @@ button {
     max-width: 1280px;
     margin: 0 auto;
 }
-/*  width: 100%;
-    max-width: 1200px;
-    margin: 0 auto; */
+
 
 .row__narrow {
     width: 100%;
@@ -104,6 +102,9 @@ nav {
 .nav__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    border: 1px solid violet;
 }
 /* .nav__row {
   width:100%;
@@ -128,14 +129,35 @@ nav {
 } */
 
 .logo__img {
-  max-width: 20px;
+  width: 40px;
+  height: 40px;
   margin-right: 8px;
 }
 
-.nav__links--menu {
+.logo__text {
+  font-size:24px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.nav__links {
   display: flex;
   align-items: center;
-  gap: 24px;
+}
+
+.nav__link {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 24px;
+}
+
+.sign__button {
+  margin-left: 16px;
+  background-color: #6415ff;
+  color:white;
+  padding: 8px 24px;
+  border-radius: 200px;
 }
 
 .btn__menu {
