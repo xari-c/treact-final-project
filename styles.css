@@ -9,9 +9,10 @@
     font-family: 'Inter', system-ui;
     color: #243e63;
   }
-  /* margin: 0;
-    padding: 0;
-    box-sizing: border-box; */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     max-width: 100vw;
@@ -28,17 +29,6 @@ h1 {
   line-height: 1.25;
 }
 
-h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  unicode-bidi: isolate;
-}
-
 h3 {
   display: block;
   font-size: 1.17em;
@@ -50,15 +40,7 @@ h3 {
   unicode-bidi: isolate;
 }
 
-h4 {
-  display: block;
-  margin-block-start: 1.33em;
-  margin-block-end: 1.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  unicode-bidi: isolate;
-}
+
 
 p {
   font-size: 18px;
@@ -68,11 +50,6 @@ p {
 button {
   cursor: pointer;
   border: none;
-  /* border: none;
-  background-color: #622be2;
-  color: white;
-  border-radius: 16px;
-  padding: 8px 24px; */
 }
 .btn {
     background-color: #6415ff;
@@ -84,6 +61,9 @@ button {
     font-weight: bold;
     transition: all 300ms ease;
     cursor: pointer;
+}
+.btn:hover {
+  background-color: #5011cc;
 }
 
 img {
@@ -118,15 +98,6 @@ section {
 }
 /* * */
 
-figure {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-} /*moderate grasp on how these work but I'm not confident I could decide these values myself in full*/
-
 svg [AttributesStyle] {
     width: 24;
     height: 24;
@@ -152,7 +123,7 @@ svg [AttributesStyle] {
   margin: 16px 0;
   font-size: 48px;
   font-weight: 900;
-  color: rgb(36, 62, 99);
+  color: #243e63;
   line-height: 1.5;
   letter-spacing: 0.025em;
 }
@@ -174,10 +145,6 @@ nav {
     display: flex;
     padding-top: 32px;
 }
-/*  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  max-height: 32px; */
 
 .nav__row {
     display: flex;
@@ -240,35 +207,11 @@ nav {
 }
 
 
-.sign__button {
-  margin: 0;
-  padding: 10px 32px;
-  margin-top: 2px;
-  border-radius: 9999px;
-  color: #fff;
-  background-color: #6415ff;
-  line-height: 1.5;
-  border: none;
-  width: auto;
-  transition: all 300ms ease;
-}
-
-.sign__button:hover {
-  color: white;
-  background:#410fa7;
-}
-
-.sign__button:after {
-  width: 0;
-  height: 0;
-}
-
 .btn__menu {
-    display: none;
-    background: transparent;
+    background-color: transparent;
     border: none;
+    display: none;
     transition: all 300ms ease;
-    font-size: 24px;
 }
 
 .btn__menu--svg:hover {
@@ -279,51 +222,40 @@ nav {
   cursor: pointer;
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 378px;
-    margin: 24px 16px;
-    padding: 32px;
-    background-color:#fff;
-    border: 1px solid rgb(229, 231, 235);
-    border-radius: 8px;
-    z-index: 4;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateX(300%);
-    transition: all 300ms ease;
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 378px;
+  margin: 24px 16px;
+  padding: 32px;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  z-index: 4;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(300%);
+  transition: all 300ms ease;
 }
-
-.modal__links {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.menu__links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.modal__link {
-    color: #1a202c;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.5;
-    margin: 8px 0;
-    padding-bottom: 4px;
-    border-bottom: 2px solid transparent;
+.menu__link {
+  color: #1a202c;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 8px 0;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
 }
-
-.modal__link--primary {
-    color: #f7fafc;
-    padding: 12px 32px;
-    background: #6415ff;
-    border-radius: 500px;
-    border: none;
-}
-
-.menu--open .modal {
+.menu--open .menu {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
@@ -386,6 +318,9 @@ header .row {
   bottom: 0;
   z-index: 1;
   transition: border-color 300ms;
+}
+.header__email--input:hover {
+  border-color: rgba(160, 174, 192);
 }
 .header__email--btn {
   z-index: 2;
@@ -477,14 +412,14 @@ FEATURES ↓
   width: calc(100%/3);
 }
 
-.feat__img--wrapper {
+.feature__img--wrapper {
   display: flex;
   padding: 20px;
   border: 1px solid #e5e7eb;
   border-radius: 500px;
 }
 
-.feat__para {
+.feature__para {
   margin-top: 16px;
   font-size: 16px;
   max-width: calc(634px / 3);
@@ -515,6 +450,10 @@ QUALITY WORK ↓
   margin-top: 32px;
 }
 
+#quality .section__title, #values .section__title {
+  line-height: 1.25;
+}
+
 .quality__img--wrapper {
   border-radius: 4px;
   border: 1px solid #e5e7eb;
@@ -528,12 +467,12 @@ QUALITY WORK ↓
   z-index: 1;
 }
 
-.quality__desc {
+.quality__description {
   max-width: 576px;
   margin-right: 64px;
 }
 
-.quality__desc,
+.quality__description,
 .quality__img--wrapper {
   width: 50%;
 }
@@ -631,6 +570,11 @@ VALUES ↓
     align-items: center;
 }
 
+#values .section__title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
 #values .btn {
   margin-top: 48px;
 }
@@ -683,11 +627,6 @@ VALUES ↓
   height: 20px;
 }
 
-svg:not(:root) {
-    overflow-clip-margin: content-box;
-    overflow: hidden;
-}
-
 .value__name {
   margin-left: 12px;
   font-size: 20px;
@@ -722,9 +661,13 @@ PRICING ↓
 
 
 #pricing .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pricing .section__para {
+  max-width: 576px;
+  text-align: center;
 }
 
 .plans {
@@ -743,14 +686,14 @@ PRICING ↓
     max-width: 24rem;
     flex-direction: column;
     border-radius: 0.5rem;
-    background-color: #fff;
+    background-color: #ffffff;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-right: 2rem;
     padding-top: 0.5rem;
     text-align: center;
-    color: rgb(26 32 44);
-    box-shadow: #000 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, #000 0px 1px 2px 0px;
+    color: #1a202c;
+    box-shadow: #00000000 0px 0px 0px 0px, #00000000 0px 0px 0px 0px, #0000001a 0px 1px 3px 0px, #0000000f 0px 1px 2px 0px;
 }
 
 .plan__top {
@@ -908,6 +851,10 @@ TESTIMONIALS ↓
   align-items: center;
   justify-content: space-between;
 }
+#testimonials .section__title {
+    margin-bottom: 24px;
+    line-height: 1.25;
+}
 
 .testimonial {
   margin-top: 40px;
@@ -1031,12 +978,10 @@ START / CALL TO ACTION ↓
   align-items: center;
 }
 
-g[AttributesStyle] {
+/* g[AttributesStyle] {
   transform: translate(300, 300);
-}
-:not(svg) {
-  transform-origin: 0px 0px;
-}
+} */
+
 
 .start__row {
   width: 100%;
@@ -1087,10 +1032,6 @@ g[AttributesStyle] {
   .start__button:nth-child(2) {
   border: 1px solid rgb(160, 174, 192);
   transition: all 300ms ease;
-}
-
-:not(svg) {
-    transform-origin: 0px 0px;
 }
 
 
@@ -1325,6 +1266,9 @@ MOBILE RESPONSIVENESS ↓
   .features {
     max-width: 768px;
   }
+  .feature__title {
+    line-height: 1;
+  }
 
   .section__title {
     font-size: 36px;
@@ -1343,7 +1287,7 @@ MOBILE RESPONSIVENESS ↓
     margin: 0 16px;
   }
 
-  .quality__desc {
+  .quality__description {
   margin-right: 0px;
   padding-right: 48px;
   }
@@ -1419,11 +1363,7 @@ MOBILE RESPONSIVENESS ↓
   max-width: 384px; /*aka half*/
   }
 
-  .feature__title {
-    line-height: 1;
-  }
-
-  .feat__para {
+  .feature__para {
     max-width: none;
   }
 
@@ -1523,6 +1463,11 @@ MOBILE RESPONSIVENESS ↓
     font-size: 36px;
   }
 
+  .feature__title {
+    letter-spacing: 0.025em;
+    line-height: 1;
+  }
+
   .section__title {
     font-size: 30px;
     line-height: 1.25;
@@ -1539,12 +1484,7 @@ MOBILE RESPONSIVENESS ↓
     margin-top: 16px;
   }
 
-  .feature__title {
-    letter-spacing: 0.025em;
-    line-height: 1;
-  }
-
-  .feat__para {
+  .feature__para {
     margin-top: 4px;
     line-height: 2;
   }
