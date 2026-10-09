@@ -356,6 +356,9 @@ header .row {
   font-size: 16px;
   transition: all 300ms ease;
 }
+.header__email--btn:hover {
+  background-color: #3c0d99;
+}
 
 .header__customers--title {
   margin-top: 80px;
