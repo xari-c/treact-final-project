@@ -93,31 +93,23 @@ img {
 }
 /* * */
 
+.steps__grid {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 10rem;
+  opacity: 0.8;
+  z-index: -10;
+  color: rgb(100, 21, 255);
+  fill: currentColor;
+}
+
 section {
     padding: 0 32px;
 }
 /* * */
-
-svg [AttributesStyle] {
-    width: 24;
-    height: 24;
-    fill: none;
-    stroke: rgb(39, 103, 73);
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-svg [AttributesStyle] {
-    width: 24;
-    height: 24;
-    fill: none;
-    stroke: rgb(155, 44, 44);
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-/*Still iffy on how the attribute style works since we haven't covered it, but included it in the copy just for practice*/
 
 .section__title {
   margin: 16px 0;
@@ -995,16 +987,12 @@ START / CALL TO ACTION ↓
 .start__container {
   padding: 96px 0;
   width: 100%;
-  background-color: rgb(100, 21, 255);
+  background-color: #6415ff;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* g[AttributesStyle] {
-  transform: translate(300, 300);
-} */
 
 
 .start__row {
@@ -1201,6 +1189,12 @@ MOBILE RESPONSIVENESS ↓
     font-size: 36px;
     color: #1a202c;
     line-height: 1.25;
+  }
+
+  .steps__grid {
+    height: 5rem;
+    width: 5rem;
+    bottom: -50px;
   }
   
   .header__description--para {
