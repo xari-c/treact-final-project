@@ -190,37 +190,33 @@ nav {
     margin: 8px 0;
     padding-bottom: 4px;
 }
-/* .logo {
-  display:flex;
-  gap: 8px;
-  align-items: center;
-} */
-
-.logo__img {
-  width: 40px;
+.nav__logo--img {
   height: 40px;
+  width: 40px;
 }
-
-.logo__text {
-  font-size:24px;
+.nav__logo--title {
   font-weight: 900;
+  font-size: 24px;
+  margin-left: 12px;
+  padding-bottom: 2px;
   letter-spacing: 0.6px;
 }
 
 .nav__links {
   display: flex;
   align-items: center;
+  padding-bottom: 2px;
 }
 
 .nav__link {
-  position: relative;
   font-size: 14px;
   font-weight: 600;
   padding-top: 4px;
-  border-bottom: 2px solid transparent;
   letter-spacing: 0.35px;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  transition: all 300ms;
   margin: 0 24px;
-  transition: all 300ms ease;
 }
 
 .login {

@@ -30,11 +30,11 @@
         <div class="row nav__row">
           <div class="nav__logo">
             <img
-              class="logo__img"
+              class="nav__logo--img"
               src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
               alt="Treact Logo"
             />
-            <div class="logo__text">Treact</div>
+            <div class="nav__logo--title">Treact</div>
           </div>
           <div class="nav__links">
             <a href="#features" class="nav__link">About</a>
@@ -52,20 +52,23 @@
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <line x1="3" y1="18" x2="21" y2="18"></line>
                     </svg>
-                </button>
+          </button>
         </div>
       </nav>
-      <div class="modal">
+      <div class="menu">
         <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-          <i class="fa fa-times"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
         </button>
-        <div class="modal__links">
-          <a class="modal__link">About</a>
-          <a class="modal__link">Blog</a>
-          <a class="modal__link">Pricing</a>
-          <a class="modal__link">Contact Us</a>
-          <a class="modal__link">Login</a>
-          <a class="modal__link modal__link--primary">Sign Up</a>
+        <div class="menu__links">
+          <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+          <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+          <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+          <a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact Us</a>
+          <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+          <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign up</a>
         </div>
       </div>
       <header>
