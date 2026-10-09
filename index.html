@@ -29,13 +29,11 @@
       <nav>
         <div class="row nav__row">
           <div class="nav__logo">
-            <figure>
-              <img
-                class="logo__img"
-                src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-                alt="Treact Logo"
-              />
-            </figure>
+            <img
+              class="logo__img"
+              src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+              alt="Treact Logo"
+            />
             <div class="logo__text">Treact</div>
           </div>
           <div class="nav__links">
@@ -73,36 +71,26 @@
       <header>
         <div class="container">
           <div class="row">
-              <div class="hero__card">
-                <div class="hero__desc--text">
-                  <h1>
-                    Beautiful React Templates
-                    <span class="purple">for you.</span>
-                  </h1>
-                  <p>
-                    Our templates are easy to set up, understand and customize.
-                    Fully modular components with a variety of pages and
-                    components.
-                  </p>
-                </div>
-                <div class="email__container">
-                  <input type="text" class="email__input" placeholder="Your E-mail Address" />
-                  <button class="btn__email">Get Started</button>
-                </div>
-                  <p class="customers__text">OUR TRUSTED CUSTOMERS</p>
-                  <img
-                    class="customers__img"
-                    src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
-                    alt="Logo strip of customers"
-                  />
-
+            <div class="header__description">
+              <h1>
+                Beautiful React Templates
+                <span class="purple">for you.</span>
+              </h1>
+              <p class="header__description--para">
+                Our templates are easy to set up, understand and customize.
+                Fully modular components with a variety of pages and
+                components.
+              </p>
+              <div class="header__email">
+                <input type="text" class="header__email--input" placeholder="Your E-mail Address" />
+                <button class="header__email--btn">Get Started</button>
               </div>
-              <figure>
-                <img
-                  class="hero__img"
-                  src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
-                />
-              </figure>
+              <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+              <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" class="header__customers">
+            </div>
+            <figure class="header__img--wrapper">
+              <img src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" class="header__img">
+            </figure>
           </div>
         </div>
       </header>
@@ -503,78 +491,68 @@
     </main>
     <footer>
       <div class="row footer__row">
-        <div class="footer__links">
-          <div class="link">
-            <div class="link__label">Main
-            </div>
-            <p>
-              Blog <br>
-              FAQs <br>
-              Support <br>
-              About Us
-            </p>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <div class="footer__column--title">MAIN</div>
+            <a href="" class="footer__column--link">Blog</a>
+            <a href="" class="footer__column--link">FAQs</a>
+            <a href="" class="footer__column--link">Support</a>
+            <a href="" class="footer__column--link">About Us</a>
           </div>
-          <div class="link">
-            <div class="link__label">Product
-            </div>
-            <p>
-              Log In <br>
-              Personal <br>
-              Business <br>
-              Team
-            </p>
+          <div class="footer__column">
+            <div class="footer__column--title">PRODUCT</div>
+            <a href="" class="footer__column--link">Log In</a>
+            <a href="" class="footer__column--link">Personal</a>
+            <a href="" class="footer__column--link">Business</a>
+            <a href="" class="footer__column--link">Team</a>
           </div>
-          <div class="link">
-            <div class="link__label">Press
-            </div>
-            <p>
-              Logos <br>
-              Events <br>
-              Stories <br>
-              Office
-            </p>
+          <div class="footer__column">
+            <div class="footer__column--title">PRESS</div>
+            <a href="" class="footer__column--link">Logos</a>
+            <a href="" class="footer__column--link">Events</a>
+            <a href="" class="footer__column--link">Stories</a>
+            <a href="" class="footer__column--link">Office</a>
           </div>
-          <div class="link">
-            <div class="link__label">Team
-            </div>
-            <p>
-              Career <br>
-              Founders <br>
-              Culture <br>
-              Onboarding
-            </p>
+          <div class="footer__column">
+            <div class="footer__column--title">TEAM</div>
+            <a href="" class="footer__column--link">Career</a>
+            <a href="" class="footer__column--link">Founders</a>
+            <a href="" class="footer__column--link">Culture</a>
+            <a href="" class="footer__column--link">Onboarding</a>
           </div>
-          <div class="link">
-            <div class="link__label">Legal
-            </div>
-            <p>
-              GDPR <br>
-              Privacy Policy <br>
-              Terms of Service <br>
-              Disclaimer
-            </p>
+          <div class="footer__column">
+            <div class="footer__column--title">LEGAL</div>
+            <a href="" class="footer__column--link">GDPR</a>
+            <a href="" class="footer__column--link">Privacy Policy</a>
+            <a href="" class="footer__column--link">Terms of Service</a>
+            <a href="" class="footer__column--link">Disclaimer</a>
           </div>
         </div>
-        <div class="tm__row">
-          <div class="logo">
-            <figure class="logo__img--wrapper">
-              <img class="logo__img" src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg">
-            </figure>
-            <h2>Treact</h2>
+        <div class="footer__divider"></div>
+        <div class="footer__bottom">
+          <div class="footer__logo">
+            <img src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="" class="footer__logo--img">
+            <h5 class="footer__logo--text">Treact Inc.</h5>
           </div>
-          <p class="tm"> &copy; 2018 Treact Inc. All Rights Reserved.</p>
-          <div class="socials">
-            <div class="social__imgs--wrapper">
-              <figure class="icon__coin">
-                <i class="fa-brands fa-facebook"></i>
-              </figure>
-              <figure class="icon__coin">
-                <i class="fa-brands fa-twitter"></i>
-              </figure>
-              <figure class="icon__coin">
-                <i class="fa-brands fa-youtube"></i>
-              </figure>
-            </div>
+          <div class="footer__copyright">
+            © 2018 Treact Inc. All Rights Reserved.
+          </div>
+          <div class="footer__socials">
+            <a class="footer__social--link">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"></path>
+              </svg>
+            </a>
+            <a class="footer__social--link">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z"></path>
+              </svg>
+            </a>
+            <a class="footer__social--link">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"></path>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
