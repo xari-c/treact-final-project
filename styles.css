@@ -34,18 +34,24 @@ h1 {
     unicode-bidi: isolate; /*? WHAT!*/
 }
 
-/* h2 {
+h2 {
   font-size:10px;
 }
 
-h3 {
+/* h3 {
   font-size: 12px;
   color:#6415ff;
-}
+} */
 
 h4 {
-  font-size: 8px;
-} */
+  display: block; /*?*/
+  margin-block-start: 1.33em; /*?*/
+  margin-block-end: 1.33em; /*?*/
+  margin-inline-start: 0px; /*?*/
+  margin-inline-end: 0px; /*?*/
+  font-weight: bold;
+  unicode-bidi: isolate; /*?*/
+}
 
 p {
   font-size: 18px;
@@ -401,17 +407,19 @@ FEATURES ↓
 /* -- */
 
 .section__title {
+  font-size: 16px;
   color:#6415ff;
-  font-size: 16;
-  padding: 8px;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.services {
+.features {
   display: flex;
   flex-wrap: wrap;
 }
 
-.service {
+.feature {
   display: flex;
   width: calc(100%/3);
 }
@@ -749,4 +757,6 @@ MOBILE RESPONSIVENESS ↓
     main {
         margin-bottom: 80px;
     }
+
+    
 }
